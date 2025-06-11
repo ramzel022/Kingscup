@@ -1,0 +1,167 @@
+:root {
+  --bg1: #1a1c2e;
+  --bg2: #2b2d42;
+  --accent: #ef476f;
+  --text: #f8f9fa;
+  --cardW: 180px;
+  --cardH: 260px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+}
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--bg1), var(--bg2));
+  color: var(--text);
+}
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.table {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+#card {
+  width: var(--cardW);
+  height: var(--cardH);
+  background: #fff url('https://upload.wikimedia.org/wikipedia/commons/5/54/Card_back_06.svg') center/cover;
+  border: 3px solid var(--accent);
+  border-radius: 8px;
+  display: grid;
+  place-content: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111;
+}
+#rule {
+  text-align: center;
+  min-height: 2.4rem;
+  font-size: 1rem;
+}
+.btn-group {
+  display: flex;
+  gap: 0.5rem;
+}
+button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:hover {
+  transform: translateY(-2px);
+}
+.kings-area {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.cup-seg {
+  width: 24px;
+  height: 36px;
+  border: 2px solid var(--accent);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+.cup-seg.filled {
+  background: var(--accent);
+}
+.history,
+.customs {
+  margin-top: 1rem;
+  width: 90%;
+  max-width: 400px;
+}
+.history ul {
+  list-style: none;
+  max-height: 120px;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+.history li {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+th,
+td {
+  padding: 0.4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.9rem;
+}
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  visibility: hidden;
+  opacity: 0;
+}
+.modal.show {
+  visibility: visible;
+  opacity: 1;
+}
+.board {
+  background: #222;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 360px;
+  text-align: center;
+  color: var(--text);
+}
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.cards-grid span {
+  padding: 0.5rem;
+  background: #fff;
+  color: #111;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.cards-grid span:hover {
+  background: var(--accent);
+  color: #fff;
+}
+.cards-grid .selected {
+  background: var(--accent);
+  color: #fff;
+  cursor: default;
+}
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
