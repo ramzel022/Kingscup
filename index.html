@@ -188,21 +188,86 @@
       const KEY = 'kc-no-delay';
       localStorage.removeItem(KEY);
 
-      const base = {
-        A: 'Waterfall',
-        2: 'You',
-        3: 'Me',
-        4: 'Floor',
-        5: 'Guys',
-        6: 'Chicks',
-        7: 'Heaven',
-        8: 'Mate',
-        9: 'Rhyme',
-        10: 'Categories',
-        J: 'Rule',
-        Q: 'Questions',
-        K: 'KING!'
-      };
+     const base = {
+  // Aces
+  'A♠': '🧊 Ice Cube Challenge! Hold it until it melts or drink.',
+  'A♦': '🎤 Sing any line from a song confidently — fail = drink.',
+  'A♥': '🎩 Do an impression of a celebrity. Can’t? Drink.',
+  'A♣': '🐓 Do the chicken dance or drink.',
+
+  // 2s
+  '2♠': '👯 Pick a buddy. If you don’t, both of you drink.',
+  '2♦': '📸 Take a silly selfie with the group. Refuse = drink.',
+  '2♥': '🚶 Moonwalk or try your best. Can’t? Sip!',
+  '2♣': '🤣 Tell a joke. If no one laughs, you drink!',
+
+  // 3s
+  '3♠': '🧠 Say three countries fast. Fail = drink.',
+  '3♦': '🐒 Act like a monkey. Refuse = drink.',
+  '3♥': '🎵 Hum a song. First to guess it is safe. If no one gets it, you drink.',
+  '3♣': '🏃 Run in place for 5 seconds. Don’t do it? Drink.',
+
+  // 4s
+  '4♠': '🌍 Name a capital city. Fail = sip.',
+  '4♦': '🕺 Dance solo for 10 seconds or drink.',
+  '4♥': '🧊 Freeze in place for 15 seconds. Move = sip!',
+  '4♣': '📢 Say your full name loudly or drink.',
+
+  // 5s
+  '5♠': '🧑 All guys drink!',
+  '5♦': '👩 All girls drink!',
+  '5♥': '🗣️ Compliment the person across from you or drink.',
+  '5♣': '🎉 Share a fun memory — or drink!',
+
+  // 6s
+  '6♠': '🎭 Do a dramatic movie line. Skip = sip!',
+  '6♦': '🛑 Forbidden Word: "Drink" — say it and sip!',
+  '6♥': '🔄 Switch seats with someone. Can’t pick? You drink.',
+  '6♣': '🎲 Roll an imaginary die — even = safe, odd = drink!',
+
+  // 7s
+  '7♠': '✋ Last to raise a hand drinks!',
+  '7♦': '🧠 Category: fruits! Go in a circle. Mess up? Drink!',
+  '7♥': '📢 Yell a fun fact. No idea? Sip!',
+  '7♣': '🧦 Put something on your head. No? Sip!',
+
+  // 8s
+  '8♠': '👯 Pick a mate. You both now drink together.',
+  '8♦': '🎭 Do a slow-motion action scene or drink.',
+  '8♥': '🐍 Speak like a snake for 10 seconds. Refuse? Drink.',
+  '8♣': '🧺 Name something in the room that starts with "T". Fail = drink.',
+
+  // 9s
+  '9♠': '📚 Spell a hard word picked by the group. Mess up = drink!',
+  '9♦': '🎬 Act like a Disney character. Refuse = sip.',
+  '9♥': '🧍 Stand still like a statue for 20 seconds. Move = drink.',
+  '9♣': '🍕 Say your favorite food backwards. Too hard? Sip!',
+
+  // 10s
+  '10♠': '📦 Category: items in a backpack.',
+  '10♦': '🛒 Category: things in a grocery store.',
+  '10♥': '📺 Category: TV shows.',
+  '10♣': '🎮 Category: video games.',
+
+  // Jacks
+  'J♠': '❓ Original question only.',
+  'J♦': '❓ Original question only.',
+  'J♥': '❓ Original question only.',
+  'J♣': '❓ Original question only.',
+
+  // Queens
+  'Q♠': '❓ Original question only.',
+  'Q♦': '❓ Original question only.',
+  'Q♥': '❓ Original question only.',
+  'Q♣': '❓ Original question only.',
+
+  // Kings
+  'K♠': '❓ Original question only.',
+  'K♦': '❓ Original question only.',
+  'K♥': '❓ Original question only.',
+  'K♣': '❓ Original question only.'
+};
+
       const suits = ['♠','♦','♥','♣'];
       const candidates = ['4♠','4♦','4♥','4♣','5♠','5♦','5♥','5♣'];
 
